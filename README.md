@@ -1,47 +1,102 @@
-# Astro Starter Kit: Minimal
+# Taksim Medika Frontend
 
-```sh
-npm create astro@latest -- --template minimal
+A modern, responsive website for Taksim Medika Clinic built with Astro, React, and Tailwind CSS.
+
+## Features
+
+- 🌐 Multi-language support (Indonesian & English)
+- 📱 Progressive Web App (PWA) ready
+- 🎨 Responsive design with Tailwind CSS
+- ⚡ Fast performance with Astro
+- 🔧 Easy deployment to Vercel
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Deployment
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Deploy to Vercel
 
-## 🚀 Project Structure
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
 
-Inside of your Astro project, you'll see the following folders and files:
+Or use Vercel CLI:
 
-```text
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Manual Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview build
+npm run preview
+```
+
+## Project Structure
+
+```
 /
 ├── public/
+│   ├── icons/          # PWA icons
+│   ├── manifest.json   # PWA manifest
+│   └── sw.js          # Service worker
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/    # React components
+│   ├── i18n/         # Internationalization
+│   └── pages/        # Astro pages
+├── astro.config.mjs  # Astro configuration
+├── vercel.json       # Vercel configuration
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Configuration
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Environment Variables
 
-Any static assets, like images, can be placed in the `public/` directory.
+No environment variables required for basic functionality.
 
-## 🧞 Commands
+### PWA
 
-All commands are run from the root of the project, from a terminal:
+The app is configured as a Progressive Web App with:
+- Offline support
+- App installation capability
+- Service worker caching
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Internationalization
 
-## 👀 Want to learn more?
+Supports Indonesian (default) and English languages with automatic routing.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Technologies Used
+
+- **Astro** - Static site generator
+- **React** - UI components
+- **Tailwind CSS** - Styling
+- **Vite PWA** - Progressive Web App features
+- **Vercel** - Deployment platform
+
+## License
+
+© 2024 Klinik Taksim Medika. All rights reserved.

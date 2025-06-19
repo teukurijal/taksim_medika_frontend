@@ -1,14 +1,14 @@
 ---
-import Navbar from '../components/react/Navbar.tsx';
-import Hero from '../components/react/Hero.tsx';
-import About from '../components/react/About.tsx';
-import Services from '../components/react/Services.tsx';
-import Doctors from '../components/react/Doctors.tsx';
-import HowToBook from '../components/react/HowToBook.tsx';
-import Testimonials from '../components/react/Testimonials.tsx';
-import Location from '../components/react/Location.tsx';
-import Footer from '../components/react/Footer.tsx';
-import { getLocaleFromUrl } from '../i18n/utils';
+import Navbar from '../../components/react/Navbar.tsx';
+import Hero from '../../components/react/Hero.tsx';
+import About from '../../components/react/About.tsx';
+import Services from '../../components/react/Services.tsx';
+import Doctors from '../../components/react/Doctors.tsx';
+import HowToBook from '../../components/react/HowToBook.tsx';
+import Testimonials from '../../components/react/Testimonials.tsx';
+import Location from '../../components/react/Location.tsx';
+import Footer from '../../components/react/Footer.tsx';
+import { getLocaleFromUrl } from '../../i18n/utils';
 
 const currentLocale = getLocaleFromUrl(Astro.url);
 const currentPath = Astro.url.pathname;
@@ -20,9 +20,9 @@ const currentPath = Astro.url.pathname;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Klinik Taksim Medika - Pelayanan Kesehatan Terpercaya & Terjangkau. Dokter berpengalaman, fasilitas modern, dan harga terjangkau." />
-		<meta name="keywords" content="klinik, dokter, kesehatan, Jakarta, terjangkau, pemeriksaan, imunisasi, laboratorium" />
-		<title>Klinik Taksim Medika - Pelayanan Kesehatan Terpercaya & Terjangkau</title>
+		<meta name="description" content="Taksim Medika Clinic - Trusted & Affordable Healthcare Services. Experienced doctors, modern facilities, and affordable prices." />
+		<meta name="keywords" content="clinic, doctor, healthcare, Jakarta, affordable, checkup, immunization, laboratory" />
+		<title>Taksim Medika Clinic - Trusted & Affordable Healthcare Services</title>
 		
 		<!-- PWA Meta Tags -->
 		<meta name="theme-color" content="#2563eb" />
@@ -31,8 +31,6 @@ const currentPath = Astro.url.pathname;
 		<meta name="apple-mobile-web-app-title" content="Taksim Medika" />
 		<link rel="manifest" href="/manifest.json" />
 		<link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-		
-		<script src="https://cdn.tailwindcss.com"></script>
 		<style>
 			html {
 				scroll-behavior: smooth;
